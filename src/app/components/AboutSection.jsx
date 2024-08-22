@@ -9,10 +9,10 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>Next.js</li>
+        <li>Laravel</li>
+        <li>MySQL</li>
+        <li>Tailwind css</li>
         <li>JavaScript</li>
         <li>React</li>
       </ul>
@@ -23,18 +23,18 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Software Engineering - SMKN 1 Surabaya </li>
+        <li>Bachelor degree Computer Science UPN Veteran Jatim (upcoming)</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Experiences",
+    id: "experiences",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Internship PT. Floo.id</li>
+        <li>Freelance project dengan Graha Mutu Persada Mojokerto (GMP)</li>
       </ul>
     ),
   },
@@ -53,16 +53,11 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image src="/images/about.jpg" width={500} height={500} alt="" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          Saya adalah seorang pengembang web dengan ketertarikan mendalam di bidang web development. Dengan pengalaman yang luas dalam menggunakan Laravel, Tailwind CSS, Next.js, dan MySQL, saya telah membangun berbagai aplikasi dan situs web yang responsif dan berkinerja tinggi. Komitmen saya untuk terus berkembang dan belajar memastikan bahwa saya selalu mengikuti perkembangan terbaru dalam teknologi dan tren industri. Saya bersemangat untuk mengeksplorasi tantangan baru dan berkontribusi dalam menciptakan solusi inovatif yang memenuhi kebutuhan pengguna.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -80,11 +75,11 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("experiences")}
+              active={tab === "experiences"}
             >
               {" "}
-              Certifications{" "}
+              Experiences{" "}
             </TabButton>
           </div>
           <div className="mt-8">

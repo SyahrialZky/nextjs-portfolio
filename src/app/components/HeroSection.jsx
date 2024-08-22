@@ -16,19 +16,17 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-500">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Syahrial Rizky",
                 1000,
                 "Web Developer",
                 1000,
-                "Mobile Developer",
-                1000,
-                "UI/UX Designer",
+                "Informatic Student",
                 1000,
               ]}
               wrapper="span"
@@ -37,8 +35,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            Informatic Student Undegraduate at UPN Veteran Jawa Timur
           </p>
           <div>
             <Link
@@ -63,9 +60,9 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#181818] w-[500px] h-[500px] lg:w-[350px] lg:h-[350px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/hero.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
