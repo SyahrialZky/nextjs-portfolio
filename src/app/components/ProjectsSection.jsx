@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/pibiti.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://pibiti.himatifa.com/",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const projectsData = [
     description: "Sistem Pelayanan Informasi untuk Warga Surabaya",
     image: "/images/projects/sapawarga.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/SyahrialZky/final-project-pemweb",
     previewUrl: "/",
   },
   {
@@ -30,6 +30,15 @@ const projectsData = [
     image: "/images/projects/gmp.png",
     tag: ["All", "Web"],
     gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 4,
+    title: "Gunting, Batu, Kertas Classification",
+    description: "Klasifikasi gambar suit (gunting, batu, kertas) menggunakan DeepLearning Python",
+    image: "/images/projects/suit.png",
+    tag: ["All", "Other"],
+    gitUrl: "https://github.com/SyahrialZky/image-classification",
     previewUrl: "/",
   },
 
@@ -71,8 +80,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Other"
+          isSelected={tag === "Other"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
